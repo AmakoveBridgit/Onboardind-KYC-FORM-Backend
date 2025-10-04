@@ -10,7 +10,7 @@ def notify_admin(submission_id):
 
     send_mail(
         subject=f"New submission for {submission.form.name}",
-        message=f"A new submission has been made by {submission.submitted_by or 'Anonymous'}.\nSubmission ID: {submission.id}",
+        message=f"A new submission has been made.\nSubmission ID: {submission.id}",
         from_email=settings.DEFAULT_FROM_EMAIL,
         recipient_list=[admin_email],
     )

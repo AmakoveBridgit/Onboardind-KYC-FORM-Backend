@@ -14,7 +14,6 @@ class FormTemplateTests(TestCase):
         self.user = User.objects.create_user(username="testuser", password="testpass")
         self.client.force_authenticate(user=self.user)
 
-        # Sample form data
         self.form_data = {
             "name": "KYC Form",
             "slug": "kyc-form",
